@@ -9,8 +9,7 @@ For permanent saving of an AO3 work for future reference, I recommend using AO3'
 
 ## Installation
 
-[Install for Chrome](https://chrome.google.com/webstore/detail/ao3-progress-bookmark/nkfjlcgomdfkeidpmabelidfegeabglc)
-
+[Install for Chrome](https://chrome.google.com/webstore/detail/ao3-progress-bookmark/bhoneiohifjbclebcmibnlgmdhdpahki)
 
 ## Features
 
