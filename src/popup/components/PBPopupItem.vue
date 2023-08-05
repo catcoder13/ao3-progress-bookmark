@@ -75,7 +75,20 @@ export default {
     const pctStr = computed(() => (settingsPUUI.compact ? Math.floor(p.work.pct * 100) : (p.work.pct * 100).toFixed(2)) + '%')
 
     const btnTitle = computed(() => {
-      const remarks = (p.work.v !== settingsPU.view) ? `\n(This bookmark will be relocated to [${CUSTOM_VIEW_STR[p.work.v] || 'No status'}])` : ''
+      let remarks = '' 
+      
+      /**
+       * bookmark relocation message is NOT shown only if
+       *  - under 'All(-1)' view
+       *  - under 'No status(-2)' view AND latest work.v is null
+       *  - under 'Unread(0)/Reading(1)/Complete(2)' view AND latest work.v === settingsPU.view
+       */
+      if (settingsPU.view !== -1 && !(settingsPU.view === -2 && p.work.v === null)) {
+        if (p.work.v !== settingsPU.view) {
+          remarks = `\n(This bookmark will be relocated to [${CUSTOM_VIEW_STR[p.work.v] || 'No status'}])`
+        }
+      }
+
       const pctStrFull = (p.work.pct * 100).toFixed(2) + '%'
       
       if (p.work.os) return `Visit One-shot (${pctStrFull})${remarks}`
