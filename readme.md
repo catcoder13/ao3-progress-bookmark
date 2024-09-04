@@ -143,8 +143,7 @@ If you would like to try to build this extension by yourself, follows below step
 
 
 ## Future improvement/maintenance
-- <del>More browser supports</del>
-  - Due to real-life commitments, I can no longer aim to expand more features in the foreseeable future 😓. Depending on my availability, development priority will go to bug fixes and maintaining existing features.
+- Due to real-life commitments, development priority will go to bug fixes and maintaining existing features over adding new features.
 
 ## Disclaimers
 Any bookmark data you create/update using the extension is exclusively stored on your local device. The extension operates without any need for remote data collection and does not perform such actions to fulfill its functionalities.
